@@ -1,0 +1,5 @@
+public class Product3x2 extends ProductDescription{
+    public SLI createSLI(int qty){
+        return new SLIThreeForTwo(this, qty);
+    }
+}
