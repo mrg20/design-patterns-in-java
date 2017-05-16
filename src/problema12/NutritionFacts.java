@@ -1,7 +1,5 @@
 package problema12;
 
-import java.security.cert.CertPathBuilder;
-
 public class NutritionFacts {
     private final int servingSize;
     private final int servings;
@@ -11,7 +9,7 @@ public class NutritionFacts {
     private final int carbohydrate;
 
     //constructors ....
-    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydrate) {
+    private NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydrate) {
         this.servingSize = servingSize;
         this.servings = servings;
         this.calories = calories;
@@ -20,9 +18,18 @@ public class NutritionFacts {
         this.carbohydrate = carbohydrate;
     }
 
+    private NutritionFacts(Builder builder){
+        this.servingSize = builder.servingSize;
+        this.servings = builder.servings;
+        this.calories = builder.calories;
+        this.fat = builder.fat;
+        this.sodium = builder.sodium;
+        this.carbohydrate = builder.carbohydrate;
+    }
+
     public static class Builder{
-        private int servingSize;
-        private int servings;
+        private final int servingSize;
+        private final int servings;
         private int calories = 0;
         private int fat = 0;
         private int sodium = 0;
@@ -49,10 +56,13 @@ public class NutritionFacts {
         }
 
         public NutritionFacts build() {
-            //Maybe add constructor in NutritionFacts with a parameter this(?)
+            //Option A
             return new NutritionFacts(servingSize, servings, calories, fat, sodium, carbohydrate);
+            //Option B
+            return new NutritionFacts(this);
         }
     }
+
     public void iDoNotWantIntellijToBeSadLmao(){
         System.out.println(servings+servingSize+calories+carbohydrate+fat+sodium);
     }
