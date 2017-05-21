@@ -3,7 +3,7 @@ package problema15;
 /**
  * Created by noki on 15/05/17.
  */
-public class SLITwoForThree extends SLI {
+public class SLIThreeForTwo extends SLI {
 
     @Override
     int subtotal() {

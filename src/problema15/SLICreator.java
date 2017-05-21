@@ -3,7 +3,7 @@ package problema15;
 public class SLICreator {
     public static SLI createSLI(ProductDescription desc) {
         if(containsTwoForThreeDiscount(desc)){
-            return new SLITwoForThree();
+            return new SLIThreeForTwo();
         }else if(containsSecondCostsHalf(desc)){
             return new SLISecondCostsHalf();
         }else{
