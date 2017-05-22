@@ -11,7 +11,7 @@ public class main {
                 .execute();
         Circle circle = (Circle) Figure.create()
                 .at(3, 4)
-                .withDimensions(2,2)
+                .withRadius(2)
                 .execute();
     }
 }
