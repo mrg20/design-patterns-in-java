@@ -10,15 +10,33 @@ public class MachineComposite extends MachineComponent {
 
 
     @Override
-    public boolean isBroken() {
-        return broken;
+    public void setBroken() {
+        if (!isBroken()){
+            broken = true;
+            notifyObservers();
+        }
     }
 
     @Override
-    public void setBroken() {
+    public boolean isBroken() {
+        updateBrokenComponents();
+        return broken && brokenComponents.isEmpty();
     }
 
     @Override
     public void repair() {
+        updateBrokenComponents();
+        for (MachineComponent component : brokenComponents) {
+            component.repair();
+        }
+        broken = true;
+    }
+
+    private void updateBrokenComponents() {
+        for (MachineComponent component : components) {
+            if (component.isBroken()){
+                brokenComponents.add(component);
+            }
+        }
     }
 }
