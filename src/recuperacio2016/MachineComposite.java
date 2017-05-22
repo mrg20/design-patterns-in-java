@@ -25,11 +25,13 @@ public class MachineComposite extends MachineComponent {
 
     @Override
     public void repair() {
-        updateBrokenComponents();
-        for (MachineComponent component : brokenComponents) {
-            component.repair();
+        if (isBroken()) {
+            for (MachineComponent component : brokenComponents) {
+                component.repair();
+            }
+            broken = true;
+            notifyObservers();
         }
-        broken = true;
     }
 
     private void updateBrokenComponents() {
