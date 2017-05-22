@@ -42,8 +42,7 @@ public class FigureBuilder {
     public Figure execute() {
         if (!at) {
             throw new IllegalStateException();
-        }
-        if (haveRadius){
+        }else if (haveRadius){
             return new Circle(x, y, radius);
         }else if(dimension){
             return new Rectangle(x, y, width, height);
