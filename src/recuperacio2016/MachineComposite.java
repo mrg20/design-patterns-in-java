@@ -18,12 +18,6 @@ public class MachineComposite extends MachineComponent {
     }
 
     @Override
-    public boolean isBroken() {
-        updateBrokenComponents();
-        return broken && brokenComponents.isEmpty();
-    }
-
-    @Override
     public void repair() {
         if (isBroken()) {
             for (MachineComponent component : brokenComponents) {
@@ -32,6 +26,12 @@ public class MachineComposite extends MachineComponent {
             broken = true;
             notifyObservers();
         }
+    }
+
+    @Override
+    public boolean isBroken() {
+        updateBrokenComponents();
+        return broken && brokenComponents.isEmpty();
     }
 
     private void updateBrokenComponents() {
