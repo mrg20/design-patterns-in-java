@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by noki on 22/05/17.
  */
-public class SumVisitor implements Visitor {
+public class SumVisitor extends VisitorTemplate implements Visitor {
     private int leaf_info = 0;
 
     @Override
@@ -19,13 +19,6 @@ public class SumVisitor implements Visitor {
 
     @Override
     public int visit(Composite composite) {
-        List<Component> components = composite.getComponents();
-        for (Component component : components) {
-            if (composite.hasBeenVisited()) {
-                leaf_info += component.accept(this);
-                composite.isVisited();
-            }
-        }
-        return leaf_info;
+        return super.visit(composite);
     }
 }
