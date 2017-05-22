@@ -59,7 +59,7 @@ public class NutritionFacts {
             //Option A
             return new NutritionFacts(servingSize, servings, calories, fat, sodium, carbohydrate);
             //Option B
-            return new NutritionFacts(this);
+            //return new NutritionFacts(this);
         }
     }
 
