@@ -20,19 +20,21 @@ public class FigureBuilder {
     }
 
     public FigureBuilder withDimensions(int width, int height) {
-        if (!dimension && !haveRadius){
-            this.width = width;
-            this.height = height;
-            dimension = true;
+        if (haveRadius){
+            throw new UnsupportedOperationException();
         }
+        this.width = width;
+        this.height = height;
+        dimension = true;
         return this;
     }
 
     public FigureBuilder withRadius(int radius){
-        if(!haveRadius && !dimension){
-            this.radius = radius;
-            haveRadius = true;
+        if(dimension){
+            throw new UnsupportedOperationException();
         }
+        this.radius = radius;
+        haveRadius = true;
         return this;
     }
 
