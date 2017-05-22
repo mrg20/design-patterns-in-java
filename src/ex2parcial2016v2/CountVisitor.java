@@ -1,10 +1,5 @@
 package ex2parcial2016v2;
 
-import java.util.List;
-
-/**
- * Created by noki on 22/05/17.
- */
 public class CountVisitor extends VisitorTemplate implements Visitor {
     private int leaf_number = 0;
 

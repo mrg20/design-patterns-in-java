@@ -1,8 +1,5 @@
 package ex2parcial2016v2;
 
-/**
- * Created by noki on 22/05/17.
- */
 public class Leaf extends Component{
     private int info = 1;
     private boolean visited = false;

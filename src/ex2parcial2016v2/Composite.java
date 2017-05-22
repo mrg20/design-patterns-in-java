@@ -2,10 +2,7 @@ package ex2parcial2016v2;
 
 import com.sun.javafx.UnmodifiableArrayList;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 
 public class Composite extends Component {
