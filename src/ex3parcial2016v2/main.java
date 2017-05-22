@@ -13,5 +13,7 @@ public class main {
                 .at(3, 4)
                 .withRadius(2)
                 .execute();
+        System.out.println(rect);
+        System.out.println(circle);
     }
 }

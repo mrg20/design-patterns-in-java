@@ -8,4 +8,10 @@ public class Circle extends Figure{
         super(x, y);
         this.radius = radius;
     }
+
+    @Override
+    public String toString(){
+        return Integer.toString(x)+Integer.toString(y)+Integer.toString(radius);
+    }
+
 }
