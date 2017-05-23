@@ -17,7 +17,7 @@ public class Leaf extends Component{
     }
 
     @Override
-    public int accept(Visitor visitor) {
-        return visitor.visit(this);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 }

@@ -13,8 +13,8 @@ public class Composite extends Component {
         this.components = components;
     }
 
-    public int accept(Visitor visitor){
-        return visitor.visit(this);
+    public void accept(Visitor visitor){
+        visitor.visit(this);
     }
 
     public List<Component> getComponents(){
