@@ -40,13 +40,12 @@ public class FigureBuilder {
 
 
     public Figure execute() {
-        if (!at) {
-            throw new IllegalStateException();
-        }else if (haveRadius){
+        if (at && haveRadius) {
             return new Circle(x, y, radius);
-        }else if(dimension){
+        } else if (at && dimension) {
             return new Rectangle(x, y, width, height);
+        } else {
+            throw new IllegalStateException();
         }
-        return new Figure(x, y);
     }
 }
