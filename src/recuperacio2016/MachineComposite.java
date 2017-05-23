@@ -8,6 +8,9 @@ public class MachineComposite extends MachineComponent {
     private List<MachineComponent> brokenComponents = new ArrayList<>();
     private boolean broken = false;
 
+    public void addComponent(MachineComponent component){
+        components.add(component);
+    }
 
     @Override
     public void setBroken() {
