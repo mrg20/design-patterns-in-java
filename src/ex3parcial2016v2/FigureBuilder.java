@@ -11,7 +11,7 @@ public class FigureBuilder {
     private boolean haveRadius = false;
 
     public FigureBuilder at(int x, int y) {
-        if (!at){
+        if (!at) {
             this.x = x;
             this.y = y;
             at = true;
@@ -20,7 +20,7 @@ public class FigureBuilder {
     }
 
     public FigureBuilder withDimensions(int width, int height) {
-        if (haveRadius){
+        if (haveRadius) {
             throw new UnsupportedOperationException();
         }
         this.width = width;
@@ -29,8 +29,8 @@ public class FigureBuilder {
         return this;
     }
 
-    public FigureBuilder withRadius(int radius){
-        if(dimension){
+    public FigureBuilder withRadius(int radius) {
+        if (dimension) {
             throw new UnsupportedOperationException();
         }
         this.radius = radius;

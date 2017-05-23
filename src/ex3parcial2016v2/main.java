@@ -5,7 +5,7 @@ public class main {
         Rectangle rect = (Rectangle) Figure
                 .create()
                 .at(3, 4)
-                .withDimensions(2,2)
+                .withDimensions(2, 2)
                 .execute();
         Circle circle = (Circle) Figure
                 .create()

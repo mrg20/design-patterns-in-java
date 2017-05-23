@@ -1,6 +1,6 @@
 package ex3parcial2016v2;
 
-public class Circle extends Figure{
+public class Circle extends Figure {
 
     protected final int radius;
 
@@ -10,8 +10,8 @@ public class Circle extends Figure{
     }
 
     @Override
-    public String toString(){
-        return Integer.toString(x)+Integer.toString(y)+Integer.toString(radius);
+    public String toString() {
+        return Integer.toString(x) + Integer.toString(y) + Integer.toString(radius);
     }
 
 }
