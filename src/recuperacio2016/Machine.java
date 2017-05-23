@@ -1,12 +1,12 @@
 package recuperacio2016;
 
 public class Machine extends MachineComponent {
-    private boolean broken = false;
 
     @Override
     public void setBroken() {
         if (!isBroken()){
             broken = true;
+            setChanged();
             notifyObservers();
         }
     }
@@ -15,6 +15,7 @@ public class Machine extends MachineComponent {
     public void repair() {
         if(isBroken()){
             broken = false;
+            setChanged();
             notifyObservers();
         }
     }

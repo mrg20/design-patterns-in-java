@@ -2,15 +2,16 @@ package recuperacio2016;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
-public class MachineComposite extends MachineComponent {
+public class MachineComposite extends MachineComponent implements Observer{
     private List<MachineComponent> components = new ArrayList<>();
     private List<MachineComponent> brokenComponents = new ArrayList<>();
-    private boolean broken = false;
 
     public void addComponent(MachineComponent component){
         components.add(component);
-    }
+    }//registrar que observem el fill
 
     @Override
     public void setBroken() {
@@ -43,5 +44,10 @@ public class MachineComposite extends MachineComponent {
                 brokenComponents.add(component);
             }
         }
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        //implementar aixó
     }
 }
