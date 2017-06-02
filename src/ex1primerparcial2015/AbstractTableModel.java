@@ -1,4 +1,4 @@
-package primerparcial2015ex1;
+package ex1primerparcial2015;
 
 
 public abstract class AbstractTableModel implements TableModel{
