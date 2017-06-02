@@ -1,1 +1,3 @@
-# exercicis_ampliacio
+# Exercicis patrons
+
+Design patterns exercices.
