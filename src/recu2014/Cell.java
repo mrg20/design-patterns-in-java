@@ -15,7 +15,7 @@ public class Cell implements Observer{
 
     public void set(Expression exp){
         this.exp = exp;
-        this.val = exp.evaluate();
+        this.val = this.exp.evaluate();
     }
 
 
@@ -29,6 +29,8 @@ public class Cell implements Observer{
         if (this.exp == null){
             throw new UnsupportedOperationException();
         }
-        this.val = exp.evaluate();
+        if (this.exp == (Expression) o){
+            this.val = exp.evaluate();
+        }
     }
 }
