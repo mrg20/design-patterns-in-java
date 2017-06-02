@@ -1,7 +1,10 @@
 package recu2015;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import static java.util.Collections.unmodifiableList;
 
 public class DrawingBuilder {
     private double x;
@@ -19,7 +22,7 @@ public class DrawingBuilder {
     }
 
     public Drawing create(){
-        return new Drawing(x, y, components);
+        return new Drawing(x, y, unmodifiableList(components));
     }
 
 }
