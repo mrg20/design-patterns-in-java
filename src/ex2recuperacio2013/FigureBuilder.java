@@ -11,8 +11,6 @@ public class FigureBuilder {
     private float dimsX;
     private float dimsY;
     private boolean doRect = true;
-    private float color;
-    private boolean doColorRect = true;
 
     public FigureBuilder at(float x, float y){
         this.x = x;
@@ -40,15 +38,10 @@ public class FigureBuilder {
         return this;
     }
 
-    public FigureBuilder in(float color){
-        this.color = color;
-        this.doRect = false;
-        this.doColorRect = true;
-        return this;
-    }
-
     public Figure Do(){
-        if(doCircle){
+        if(doCircle && doRect || doCircle && doLine|| doRect && doLine){
+            return null;
+        }else if(doCircle){
             //return new circle
         }else if(doRect){
             //return new rect
