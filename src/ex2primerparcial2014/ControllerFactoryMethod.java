@@ -3,7 +3,7 @@ package ex2primerparcial2014;
 
 /*
 Fem factory method, no solucionem el principi obert-tancat perque el tenim aqui,
- pero no importa, és la funció de la classe. Per tant el millorem.
+ pero no importa, la funció del factory method és només crear. Per tant el millorem.
  */
 public class ControllerFactoryMethod {
 
