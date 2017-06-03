@@ -1,4 +1,4 @@
-package ex2primerparcial2014;
+package ex2primerparcial2014_3Patrons;
 
 public abstract class ControllerAbstractFactory {
     public abstract Printer createPrinter();

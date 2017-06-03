@@ -1,5 +1,4 @@
-package ex2primerparcial2014;
-
+package ex2primerparcial2014_3Patrons;
 
 public class ControllerFactoryHi extends ControllerAbstractFactory {
     @Override

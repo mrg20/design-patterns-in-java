@@ -1,4 +1,4 @@
-package ex2primerparcial2014;
+package ex2primerparcial2014_3Patrons;
 
 /**
  * Created by noki on 3/06/17.

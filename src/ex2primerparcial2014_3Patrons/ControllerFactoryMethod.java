@@ -1,4 +1,4 @@
-package ex2primerparcial2014;
+package ex2primerparcial2014_3Patrons;
 
 /*
 Fem factory method, no solucionem el principi obert-tancat perque el tenim aqui,
