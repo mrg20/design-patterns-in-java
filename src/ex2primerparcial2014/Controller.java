@@ -11,6 +11,12 @@ public class Controller extends Observable{//ignorar lo de observable
     private Visualizer visualizer;
     private Printer printer;
 
+    public Controller (Resolution resolution, Document document){
+        this.resolution = resolution;
+        this.document = document;
+        updateResolution(this.resolution);
+    }
+
     public void updateResolution(Resolution resolution){//observable
         this.resolution = resolution;
         factory = ControllerFactoryMethod.createFactory(this.resolution);
