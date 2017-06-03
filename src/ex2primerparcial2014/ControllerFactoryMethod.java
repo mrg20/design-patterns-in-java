@@ -1,17 +1,25 @@
 package ex2primerparcial2014;
 
+
 /*
 Fem factory method, no solucionem el principi obert-tancat perque el tenim aqui,
  pero no importa, és la funció de la classe. Per tant el millorem.
  */
-public class ControllerFactoryMethod {//IGNORAR L'IMPLEMENTACIO DE FABRICA ABSTRACTA, NO FA FALTA.
+public class ControllerFactoryMethod {
 
-    public static ControllerAbstractFactory createFactory(Resolution resolution) {
+    public static Visualizer createVisualizer(Resolution resolution) {
         if(resolution == Resolution.HI) {
-            return new ControllerFactoryHi();
+            return new VisualizerHiRes();
         }else{
-            return new ControllerFactoryLow();
+            return new VisualizerLowRes();
         }
     }
 
+    public static Printer createPrinter(Resolution resolution) {
+        if (resolution == Resolution.HI) {
+            return new PrinterHiRes();
+        } else {
+            return new PrinterLowRes();
+        }
+    }
 }
