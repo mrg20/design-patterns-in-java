@@ -24,4 +24,9 @@ public class EspasaFusta extends Espasa {
     public void destruir() {
 
     }
+
+    @Override
+    public void accept(EinaVisitor visitor) {
+        visitor.visit(this);
+    }
 }

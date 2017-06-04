@@ -24,4 +24,9 @@ public class PicDiamant extends Pic {
     public void destruir() {
 
     }
+
+    @Override
+    public void accept(EinaVisitor visitor) {
+        visitor.visit(this);
+    }
 }
