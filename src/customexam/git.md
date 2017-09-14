@@ -1,11 +1,3 @@
-# Que és git?
-
-Git és un controlador de versions. Guarda versions del teu programa, de manera que puguis accedir a qualsevol versió d'ell sense cap problema, sempre tenint guardades totes les accions que s'han realitzat en el projecte. Això significa que és una eina molt potent per treballar en equip, ja que gràcies a ella tenim un major control de les incorporacions que fan els desenvolupadors en el projecte.
-
-S'ha modificat una part del projecte, i ja no funciona? Anem a la versió anterior. El meu company d'equip té una versió del programa, i jo en tinc una altra (les dues operatives), però ens agradaria ajuntar-les? Li diem a git que ens ho faci. Volem fer que un equip de 10 persones treballi sobre un mateix projecte, sense que uns tinguin problemes per culpa de les modificacions dels altres? Git ens ho pot controlar.
-
-Que significa tot això? Doncs que gràcies a git, no tenim problemes per treballar en equip o controlar versions del programari, per tant reduïm risk d'errors i guanyem temps i cost de desenvolupament.
-
 # Pautes a seguir per git.
 
 En aquest document trobaràs comandes de git, juntament amb el seu ús i explicació. Les comandes estan agrupades en tres nivells, ja que no totes són igual d'entenedores o simples, ni igual d'importants. Amb els dos primers nivells n'hi ha prou com per poder treballar amb el repositori.
