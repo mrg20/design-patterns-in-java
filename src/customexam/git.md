@@ -1,4 +1,4 @@
-# Pautes a seguir per git.
+# Pautes a seguir per git
 
 En aquest document trobaràs comandes de git, juntament amb el seu ús i explicació. Les comandes estan agrupades en tres nivells, ja que no totes són igual d'entenedores o simples, ni igual d'importants. Amb els dos primers nivells n'hi ha prou com per poder treballar amb el repositori.
 
