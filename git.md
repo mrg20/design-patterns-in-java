@@ -293,7 +293,7 @@ Origin           \
 
 ### Git pull
 
-Si el que volem és actualitzar-ho tot (origin i local) amb l'informació del repositori, utilitzarem git pull. Aquesta comanda és una convinació de git fetch i git merge, és a dir:
+Si el que volem és actualitzar l'origin i actualitzar la branca en la que treballem, utilitzarem git pull. Aquesta comanda és una convinació de git fetch i git merge "branca en la que estem", és a dir:
 
 *Exemple*
 ```
@@ -306,14 +306,14 @@ __________      \   <= git fetch
 Origin           \
 ---|-----|--------|- <= development
  j23k   l12j     k32g
-_________\        \ <= git merge
+_________\        \ <= git merge "branca en la que estem"
 Local     \        \
 ---|-----|-|--------|- <= development
  j23k  a34f        k32g
           l12j
 ```
 
-Que significa això? Aquesta comanda es molt util, però a vegades perillosa. Si estem treballant sobre una branca i fem modificacions que no té el repositori, aquesta comanda pot ocasionar conflictes(en la part de merge).
+Que significa això? Aquesta comanda es molt util, però a vegades perillosa. Si estem treballant sobre una branca i fem modificacions que no té el repositori, aquesta comanda pot ocasionar conflictes (en la part de merge).
 
 ### Git revert
 
